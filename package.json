@@ -1,0 +1,24 @@
+{
+  "name": "disc-bot",
+  "version": "1.0.0",
+  "description": "first project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikita2079/disc-bot.git"
+  },
+  "keywords": [
+    "bot",
+    "discord",
+    "nodejs"
+  ],
+  "author": "nikita",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikita2079/disc-bot/issues"
+  },
+  "homepage": "https://github.com/nikita2079/disc-bot#readme"
+}
