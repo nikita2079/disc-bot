@@ -2,18 +2,29 @@
 require('dotenv').config()
 const discord = require('discord.js');
 const client = new discord.Client();
+const utils = require('./utils.js');
+
 
 // On ready
 client.on('ready', () => {
     console.log(`Ready to rumble.`);
+    utils.otherFun();
 });
+
+
 
 // On message
 client.on('message', msg => {
-    if(msg.content === 'Why?') {
-        msg.channel.send('Because.');
-    }
+   // Confirm human author
+   if(!msg.author.bot) {
+       utils.flip(msg.content, 
+           res => msg.channel.send(res)
+        )
+   }
 });
+
 
 // Login to Discord
 client.login(process.env.TOKEN);
+
+
